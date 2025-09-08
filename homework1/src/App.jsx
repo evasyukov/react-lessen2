@@ -1,4 +1,4 @@
-import { style } from "./App.module.css"
+import styles from "./App.module.css"
 import { useState } from "react"
 
 function App() {
@@ -38,35 +38,35 @@ function App() {
 
   return (
     <>
-      <div className="app">
-        <h1 className="page-heading">Ввод значения</h1>
-        <p className="no-margin-text">
+     <div className={styles.app}>
+        <h1 className={styles.pageHeading}>Ввод значения</h1>
+        <p className={styles.noMarginText}>
           Текущее значение <code>value</code>:
-          <output className="current-value"> {value}</output>
+          <output className={styles.currentValue}> {value}</output>
         </p>
-        {error !== "" && <div className="error">{error}</div>}
+        {error !== "" && <div className={styles.error}>{error}</div>}
 
-        <div className="buttons-container">
-          <button className="button" onClick={onInputButtonClick}>
+        <div className={styles.buttonsContainer}>
+          <button className={styles.button} onClick={onInputButtonClick}>
             Ввести новое
           </button>
           <button
-            className="button"
+            className={styles.button}
             disabled={!isValueVaild}
             onClick={onAddButtonClick}
           >
             Добавить в список
           </button>
         </div>
-        <div className="list-container">
-          <h2 className="list-heading">Список:</h2>
+        <div className={styles.listContainer}>
+          <h2 className={styles.listHeading}>Список:</h2>
           {list.length === 0 ? (
-            <p className="no-margin-text">Нет добавленных элементов</p>
+            <p className={styles.noMarginText}>Нет добавленных элементов</p>
           ) : (
-            <ul className="list">
+            <ul className={styles.list}>
               {" "}
               {list.map((item) => (
-                <li key={item.id} className="list-item">
+                <li key={item.id} className={styles.listItem}>
                   {item.value}
                 </li>
               ))}

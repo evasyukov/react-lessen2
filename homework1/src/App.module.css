@@ -10,21 +10,21 @@
     font-weight: bold;
 }
 
-.page-heading {
+.pageHeading {
     margin: 0 0 0.5rem;
     font-size: 25px;
     font-weight: bold;
 }
 
-.no-margin-text {
+.noMarginText {
     margin: 0;
 }
 
-.current-value {
+.currentValue {
     font-weight: bold;
 }
 
-.buttons-container {
+.buttonsContainer {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
@@ -51,11 +51,11 @@
     background-color: var(--disabled-color);
 }
 
-.list-container {
+.listContainer {
     margin-top: 1.5rem;
 }
 
-.list-heading {
+.listHeading {
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 0.5rem;
@@ -67,6 +67,6 @@
     max-width: 300px;
 }
 
-.list-item:not(:last-child) {
+.listItem:not(:last-child) {
     margin-bottom: 0.5em;
 }
